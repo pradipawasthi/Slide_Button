@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Slide Button"
 include(":app")
-include(":slidebuttonlib")
+include(":SlideButtonlibrary")
