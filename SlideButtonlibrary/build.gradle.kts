@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+//    alias(libs.plugins.mavenpublish)
+    id("maven-publish")
+
 }
 
 android {
@@ -39,4 +42,18 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "https://github.com/pradipawasthi/"
+            artifactId = "Slide_Button"
+            version = "1.0.2"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }
