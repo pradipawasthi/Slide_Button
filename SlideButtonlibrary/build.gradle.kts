@@ -47,9 +47,9 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "https://github.com/pradipawasthi/"
+            groupId = "com.github.pradipawasthi"
             artifactId = "Slide_Button"
-            version = "1.0.2"
+            version = "1.0.3"
 
             afterEvaluate {
                 from(components["release"])

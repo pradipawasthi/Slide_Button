@@ -7,4 +7,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorAccent1">#FE8121</color>
     <color name="pact_purple">#484EAA</color>
+    <color name="gradient1">#FE8121</color>
+    <color name="gradient2">#C95300</color>
+
+
 </resources>
